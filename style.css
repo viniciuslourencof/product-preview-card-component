@@ -13,20 +13,17 @@ body {
 .card {
     align-items: center;           
     background-color: #FFFFFF;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
     display: flex;
     height: 404px;
-    width: 40%;    
-
-
     bottom: 0;
     margin: auto;
     left: 0; 
     position: absolute;
     right: 0;
     top: 0; 
-    
+    width: 40%;    
+    overflow: hidden;
 }
 
 .card__texts {
