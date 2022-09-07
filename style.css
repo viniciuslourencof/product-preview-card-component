@@ -24,9 +24,16 @@ body {
     width: 35%;        
 }
 
-.card__texts {    
+.card {
+    align-items: center;           
+    background-color: #FFFFFF;
+    border-radius: 10px;    
+    display: flex;            
+    overflow: hidden;
+}
+
+.card__texts {
     padding: 1rem;
-    width: 50%;
 }
 
 .card__img {
