@@ -1,0 +1,145 @@
+* { 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+body {
+    background-color: #F3EAE3;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    width: 100%;
+}
+
+.card {    
+    align-items: center;           
+    background-color: #FFFFFF;
+    border-radius: 10px;        
+    box-sizing: border-box;
+    display: flex;    
+    height: auto;
+    margin: auto;    
+    overflow: hidden;    
+    width: 35%;        
+}
+
+.card__texts {    
+    padding: 1rem;
+    width: 50%;
+}
+
+.card__img {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 100%;
+    width: 50%;
+}
+
+.card__title {
+    color: #101519;
+    font-family: 'Fraunces', serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card__description {    
+    color: #A9A8AB;
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.card__prices {
+    align-items: center;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;    
+}
+
+.card__price {
+    color: #44806A;
+    font-family: 'Fraunces', serif;
+    margin-right: 1rem;
+}
+
+.card__original-price {
+    color: #A9A8AB;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    text-decoration: line-through;    
+}
+
+.card__subtitle {
+    color: #B8B7BC;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+.card__button {
+    background-color: #3D8168;
+    border: none;
+    border-radius: 5px;
+    color: #F1EAE2;
+    cursor: pointer;
+    height: 40px;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    width: 100%;    
+}
+
+.card__button i {
+    margin-right: 0.5rem;
+}
+
+.card__button:hover {
+    background-color: #1A4031;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .card {
+        display: flex;        
+        flex-direction: row;
+        width: 35%;
+        height: auto;   
+        margin: auto;        
+    }
+
+    .card__img {
+        border-bottom-left-radius: 10px;        
+        border-top-right-radius: 0px;
+        height: 100%;
+        width: 50%;
+    }
+
+    .card__texts {        
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        display: flex;
+        flex-direction: column;      
+        width: auto; 
+        height: auto;                 
+        margin: 1rem;                 
+    }
+
+    .card__img {
+        border-bottom-left-radius: 0px;        
+        border-top-right-radius: 10px;
+        height: 35%;
+        width: 100%;                
+    }
+
+    .card__texts {        
+        width: auto;
+    }
+
+}
+
+
