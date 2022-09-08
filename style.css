@@ -133,13 +133,13 @@ body {
         flex-direction: column;      
         width: auto; 
         height: auto;                 
-        margin: 1rem;                 
+        margin: auto 1rem;                 
     }
 
     .card__img {
         border-bottom-left-radius: 0px;        
         border-top-right-radius: 10px;
-        height: 35%;
+        height: 15rem;
         width: 100%;                
     }
 
