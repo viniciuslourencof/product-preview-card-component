@@ -1,0 +1,139 @@
+
+* { 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;      
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #F3EAE3;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    width: 100%;
+}
+
+.card {    
+    align-items: center;           
+    background-color: #FFFFFF;
+    border-radius: 10px;            
+    display: flex;            
+    height: auto;                 
+}
+
+.card__texts {    
+    padding: 1rem;                
+}
+
+.card__img {        
+    background-image: url('https://raw.githubusercontent.com/viniciuslourencof/product-preview-card-component/master/images/image-product-desktop.jpg');    
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    
+
+    border-top-left-radius: 10px;         
+}
+
+.card__title {
+    color: #101519;
+    font-family: 'Fraunces', serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;    
+}
+
+.card__description {    
+    color: #A9A8AB;
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.card__prices {
+    align-items: center;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;    
+}
+
+.card__price {
+    color: #44806A;
+    font-family: 'Fraunces', serif;
+    margin-right: 1rem;
+}
+
+.card__original-price {
+    color: #A9A8AB;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    text-decoration: line-through;    
+}
+
+.card__subtitle {
+    color: #B8B7BC;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+.card__button {
+    background-color: #3D8168;
+    border: none;
+    border-radius: 5px;
+    color: #F1EAE2;
+    cursor: pointer;
+    height: 40px;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    width: 100%;    
+}
+
+.card__button i {
+    margin-right: 0.5rem;
+}
+
+.card__button:hover {
+    background-color: #1A4031;
+}
+
+@media screen and (max-width: 1440px) {
+    .card {              
+        flex-direction: row;
+        width: 60%;        
+        margin: auto;        
+    }
+
+    .card__img {
+        border-bottom-left-radius: 10px;        
+        border-top-right-radius: 0px;        
+        height: 400px;
+        width: 50%;
+    }
+
+    .card__texts {        
+        width: 50%;
+    }    
+
+}
+
+@media screen and (max-width: 600px) {
+    .card {        
+        flex-direction: column;      
+        width: auto;         
+        margin: auto 1rem;                 
+    }
+
+    .card__img {
+        border-bottom-left-radius: 0px;        
+        border-top-right-radius: 10px;
+        height: 15rem;
+        width: 100%;               
+    }
+
+    .card__texts {        
+        width: auto;
+    }
+
+}
