@@ -1,8 +1,9 @@
-
 * { 
     margin: 0; 
     padding: 0;
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif;      
+    box-sizing: border-box;
+
 }
 
 body {
@@ -16,40 +17,28 @@ body {
 .card {    
     align-items: center;           
     background-color: #FFFFFF;
-    border-radius: 10px;        
-    box-sizing: border-box;
-    display: flex;    
-    height: auto;
-    margin: auto;    
-    overflow: hidden;    
-    width: 35%;        
-}
-
-.card {
-    align-items: center;           
-    background-color: #FFFFFF;
-    border-radius: 10px;    
+    border-radius: 10px;            
     display: flex;            
-    overflow: hidden;
+    height: auto;                 
 }
 
-.card__texts {
-    padding: 1rem;
+.card__texts {    
+    padding: 1rem;                
 }
 
-.card__img {
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    height: 100%;
-    width: 50%;
-        
+.card__img {        
+    background-image: url('https://raw.githubusercontent.com/viniciuslourencof/product-preview-card-component/master/images/image-product-desktop.jpg');    
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */  
+    border-top-left-radius: 10px;         
 }
 
 .card__title {
     color: #101519;
     font-family: 'Fraunces', serif;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;    
 }
 
 .card__description {    
@@ -106,35 +95,30 @@ body {
     background-color: #1A4031;
 }
 
-
 @media screen and (max-width: 1440px) {
-    .card {
-        display: flex;        
+    .card {              
         flex-direction: row;
-        width: 35%;
-        height: auto;   
+        width: 60%;        
         margin: auto;        
     }
 
     .card__img {
         border-bottom-left-radius: 10px;        
-        border-top-right-radius: 0px;
-        height: 100%;
+        border-top-right-radius: 0px;        
+        height: 400px;
         width: 50%;
     }
 
     .card__texts {        
         width: 50%;
-    }
+    }    
 
 }
 
 @media screen and (max-width: 600px) {
-    .card {
-        display: flex;
+    .card {        
         flex-direction: column;      
-        width: auto; 
-        height: auto;                 
+        width: auto;         
         margin: auto 1rem;                 
     }
 
